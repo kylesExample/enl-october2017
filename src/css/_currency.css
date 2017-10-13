@@ -1,0 +1,69 @@
+
+.currency {
+  width: 300px;
+  height: 154px;
+  float: right;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.mobile .currency {
+  width: 640px;
+  height: 276px;
+  float: none;
+  font-size: 80px;
+  padding-top : 50px;
+}
+
+.points{
+  width: 200px;
+  height: 50px;
+  float: right;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.mobile .points {
+  width: 100%;
+  height: 80px;
+  float: none;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.points.millions{
+  font-size: 32px;
+}
+
+.points span {
+  position: relative;
+  top: -15px;
+  font-size: 20px;
+}
+
+.mobile .points span {
+  position: relative;
+  top: -30px;
+  font-size: 40px;
+}
+
+.points.millions span {
+  top: -8px;
+}
+
+.date {
+  width: 200px;
+  float: right;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 6px;
+}
+
+.mobile .date {
+  width: 440px;
+  font-size: 32px;
+  line-height: 44px;
+  float: none;
+  margin: 0px auto;
+  padding-top: 12px;
+}

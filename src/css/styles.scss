@@ -1,0 +1,59 @@
+* {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+/***********
+Utilities
+**************/
+
+.clamp-line-2 {
+  display            : -webkit-box;
+  -webkit-line-clamp : 2;
+  -webkit-box-orient : vertical;
+  overflow           : hidden;
+}
+
+/***********
+Project Styles
+**************/
+
+#mi_size_container {
+  float      : left;
+  position   : relative;
+  min-width  : 1px;
+  min-height : 1px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#mi_size_container {
+  background-size: cover;
+  color: #4d4f53;
+  font-family: 'bentonsans regular' ,'bentonsans' , arial;
+  overflow: hidden;
+  position: relative;
+}
+
+#mi_size_container.starwood , #mi_size_container.spg {
+  color: #3E3061;
+}
+
+#mi_size_container.hidden {
+  height: 1px !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  padding:  !important;
+}
+
+#mi_size_container.hidden * , #mi_size_container.static * {
+  height: 1px !important;
+  visibility: hidden;
+}
+
+@import 'currency';
+@import 'datavis';
+@import 'merchant';
+@import 'savings';

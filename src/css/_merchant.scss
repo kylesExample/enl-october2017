@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#mi_size_container.mobile .recommendation {
+  width: 320px;
+  padding: 17px 48px 0 14px;
+  position: relative;
+}
+
+.recommendation {
+  width: 600px;
+  height: 75px;
+  overflow: hidden;
+  padding: 15px 20px 0 36px;
+  text-align: left;
+}
+
+.recommendation > div {
+  line-height: 24px;
+  height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.name {
+  font-family: 'bentonsans medium';
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.address {
+  font-family: 'bentonsans regular';
+  font-size: 14px;
+}
+
+.mobile .recommendation > div {
+  line-height: 24px;
+  height: 24px;
+}

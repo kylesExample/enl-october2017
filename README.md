@@ -1,5 +1,5 @@
 # Project Page
-http://projects.movableink.com/production/consumer-enl-october2017/index.html
+http://projects.movableink.com/production/amec-ccsg/consumer-enl-october2017/index.html
 
 
 # Params
@@ -34,6 +34,9 @@ mi_sample_data=platinum-enl
 
 
 
+mi_block=currency-left&mi_card_product=green&mi_points=8221
+mi_block=currency-savings&mi_card_product=green&mi_points=8221
+mi_block=data-vis&mi_card_product=hilton&mi_spend=17234
 
 # Campaign
 https://app.movableink.com/agile/campaigns/530890/template/preview

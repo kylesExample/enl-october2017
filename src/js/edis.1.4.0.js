@@ -2,15 +2,19 @@ import sample from './platinum-enl';
 
 var EDIS = EDIS || {};
 EDIS.get = function(options, callback) {
+  // forcing the callback with a sample data instead of hitting the api
+
   var args = Array.prototype.slice.call(arguments);
 
   callback = args.pop();
+  callback(JSON.stringify(sample));
+  return;
   options = args[0] || {};
 
   if (EDIS.sample_data || CD.param('sample_data')) {
     callback(JSON.stringify(sample));
-    // var sampleDataUrl = 'http://projects.movableink.com/production/amex-sample-data/' + (EDIS.sample_data || CD.param('sample_data')) + '.json';
-    // CD.get(sampleDataUrl, callback);
+    var sampleDataUrl = 'http://projects.movableink.com/production/amex-sample-data/' + (EDIS.sample_data || CD.param('sample_data')) + '.json';
+    CD.get(sampleDataUrl, callback);
     return;
   }
 
@@ -35,13 +39,13 @@ EDIS.get = function(options, callback) {
     suspensionTime = options.maxSuspension;
   }
   if (port == '3006') {
-    urlBase = 'http://edis-api.movableink-templates.com:8080/shared/services/digitalcontent/EnterpriseDigitalInformationService/RetrieveDigitalInformation?email=';
+    urlBase = '';
   } else {
     suspensionTime = 10000;
     urlBase = [
-      'http://cors.movableink.com/edis-api-nonprod.movableink-templates.com:',
-      port,
-      '/shared/services/digitalcontent/EnterpriseDigitalInformationService/RetrieveDigitalInformation?email=',
+      '',
+      '',
+      '',
     ].join('');
   }
 

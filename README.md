@@ -3,6 +3,10 @@ http://projects.movableink.com/production/amec-ccsg/consumer-enl-october2017/ind
 
 
 # Params
+
+use these query params on the local index.html, the hosted page will only work
+on authorized vpn's and networks
+
 mi_item_index=0
 
 mi_card_product=prg
@@ -12,6 +16,7 @@ mi_card_product=hilton%20surpass
 mi_card_product=amex%20everyday%20preferred
 mi_card_product=blue%20cash
 
+fallback values if EDIS is successful but rewards data is missing
 mi_points=43123
 mi_as_of=10-01-2017
 
@@ -30,9 +35,10 @@ mi_block=data-vis-terms
 mi_block=benefit-3
 mi_block=merchant-listing
 mi_block=terms
+
 mi_sample_data=platinum-enl
 
-
+example query strings
 
 mi_block=currency-left&mi_card_product=green&mi_points=8221
 mi_block=currency-savings&mi_card_product=prg&mi_points=8221
